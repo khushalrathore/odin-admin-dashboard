@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>odin_admin_dashboard</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <div class="navbarDiv">
+    <nav>
+      <h1>
+        Dashboard
+      </h1>
+      <div>
+        <ul>
+          <li>
+            <a href="/" title="Home"></a>
+            <img src="./assets/homeF.png" alt="Home" loading="lazy" height="20px">
+            <img src="./assets/homeF.png" alt="Home" loading="lazy" height="20px">
+            Home
+          </li>
+          <li>
+            <a href="#" title="Profile"></a>
+            <img src="./assets/profile.png" alt="Profile" loading="lazy" height="20px">
+            <img src="./assets/profileF.png" alt="Profile Active" loading="lazy" height="20px">
+
+            Profile
+          </li>
+          <li>
+            <a href="#" title="Chat"></a>
+            <img src="./assets/chat.png" alt="Chat" loading="lazy" height="20px">
+            <img src="./assets/chatF.png" alt="Chat Active" loading="lazy" height="20px">
+            Messages
+          </li>
+          <li>
+            <a href="#" title="History"></a>
+            <img src="./assets/history.png" alt="History" loading="lazy" height="20px">
+            <img src="./assets/historyF.png" alt="History Active" loading="lazy" height="20px">
+            History
+          </li>
+          <li>
+            <a href="#" title="Tasks"></a>
+            <img src="./assets/task.png" alt="Task" loading="lazy" height="20px">
+            <img src="./assets/taskF.png" alt="Task Active" loading="lazy" height="20px">
+
+            Tasks
+          </li>
+          <li>
+            <a href="#" title="Community"></a>
+            <img src="./assets/community.png" alt="Community" loading="lazy" height="20px">
+            <img src="./assets/communityF.png" alt="Community Active" loading="lazy" height="20px">
+            Communities
+          </li>
+        </ul>
+        <ul>
+          <li style="display: none;"></li>
+          <li>
+            <a href="#" title="Settings"></a>
+            <img src="./assets/settings.png" alt="Settings" loading="lazy" height="20px">
+            <img src="./assets/settingsF.png" alt="Settings Active" loading="lazy" height="20px">
+
+            Settings
+          </li>
+          <li>
+            <a href="#" title="Support"></a>
+            <img src="./assets/support.png" alt="Support" loading="lazy" height="20px">
+            <img src="./assets/supportF.png" alt="Support Active" loading="lazy" height="20px">
+            Support
+          </li>
+          <li>
+            <a href="#" title="Privacy"></a>
+            <img src="./assets/privacy.png" alt="Privacy" loading="lazy" height="20px">
+            <img src="./assets/privacyF.png" alt="Privacy Active" loading="lazy" height="20px">
+            Privacy
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+  <div class="contentDiv">
+    <div class="topbarDiv">
+
+      <div class="searchBarDiv">
+        <img src="./assets/Search.png" alt="Search" height="20px">
+        <input type="text" name="searchBar" id="searchBar" placeholder="Search for anything...">
+      </div>
+      <div class="topBarSettings">
+        <div class="topBarIcons">
+          <div>
+            <a href="#" title="Notification"></a>
+            <img src="./assets/notification.png" alt="Notification" height="18px">
+          </div>
+          <div>
+            <a href="#" title="Events"></a>
+            <img src="./assets/calendar.png" alt="Calendar Events" height="18px">
+          </div>
+        </div>
+        <div class="profileDiv">
+
+          <div class="userInfo">
+            <a href="https://github.com/khushalrathore" title="Khushal Rathore"></a>
+            <div>
+              <span>Khushal</span>
+            </div>
+            <div>
+              <span>@khushalrathore_</span>
+            </div>
+          </div>
+          <div class="userPfp" style="display: flex;gap:8px">
+            <div>
+              <a href="#" title="Profile Photo"></a>
+              <img src="https://avatars.githubusercontent.com/u/118611135?v=4" height="30px" />
+            </div>
+            <span>
+              <a href="#" title="Account Options"></a>
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="secondTopBarDiv">
+      <div class="userGreeting">
+        <img src="https://avatars.githubusercontent.com/u/118611135?v=4" height="64px" />
+        <div>
+          <h4>Hey there,</h4>
+          <h2 id="userGreeting">Good Morning</h2>
+        </div>
+      </div>
+      <div class="userMethods">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
+    </div>
+    <div class="userData">
+      <div class="projectsDiv">
+        <h3>Your Projects</h3>
+        <div class="projects">
+          <div id="project1" class="projectCard">
+            <span>Super Cool Project</span>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+              rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+              explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+            <div style="display: flex;align-self: flex-end;gap:1rem;margin-top: 1rem;">
+
+              <div class="hasProjectOptions">
+                <img src="./assets/add.png" alt="Add Project" loading="lazy" height="18px">
+                <img src="./assets/addF.png" alt="Project Added" loading="lazy" height="18px">
+              </div>
+
+              <div class="hasProjectOptions">
+                <img src="./assets/view.png" alt="View Project" loading="lazy" height="18px">
+                <img src="./assets/viewF.png" alt="Project Viewed" loading="lazy" height="18px">
+              </div>
+
+              <div class="hasProjectOptions">
+                <img src="./assets/merge.png" alt="Merge Project" loading="lazy" height="18px">
+                <img src="./assets/mergeF.png" alt="Project Merged" loading="lazy" height="18px">
+              </div>
+
+            </div>
+          </div>
+          <div id="project1" class="projectCard">
+            <span>Super Cool Project</span>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+              rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+              explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+            <div style="display: flex;align-self: flex-end;gap:1rem;margin-top: 1rem;">
+
+              <div class="hasProjectOptions">
+                <img src="./assets/add.png" alt="Add Project" loading="lazy" height="18px">
+                <img src="./assets/addF.png" alt="Project Added" loading="lazy" height="18px">
+              </div>
+
+              <div class="hasProjectOptions">
+                <img src="./assets/view.png" alt="View Project" loading="lazy" height="18px">
+                <img src="./assets/viewF.png" alt="Project Viewed" loading="lazy" height="18px">
+              </div>
+
+              <div class="hasProjectOptions">
+                <img src="./assets/merge.png" alt="Merge Project" loading="lazy" height="18px">
+                <img src="./assets/mergeF.png" alt="Project Merged" loading="lazy" height="18px">
+              </div>
+
+            </div>
+          </div>
+          <div id="project1" class="projectCard">
+            <span>Super Cool Project</span>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+              rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+              explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+            <div style="display: flex;align-self: flex-end;gap:1rem;margin-top: 1rem;">
+
+              <div class="hasProjectOptions">
+                <img src="./assets/add.png" alt="Add Project" loading="lazy" height="18px">
+                <img src="./assets/addF.png" alt="Project Added" loading="lazy" height="18px">
+              </div>
+
+              <div class="hasProjectOptions">
+                <img src="./assets/view.png" alt="View Project" loading="lazy" height="18px">
+                <img src="./assets/viewF.png" alt="Project Viewed" loading="lazy" height="18px">
+              </div>
+
+              <div class="hasProjectOptions">
+                <img src="./assets/merge.png" alt="Merge Project" loading="lazy" height="18px">
+                <img src="./assets/mergeF.png" alt="Project Merged" loading="lazy" height="18px">
+              </div>
+
+            </div>
+          </div>
+          <div id="project1" class="projectCard">
+            <span>Super Cool Project</span>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+              rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+              explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+            <div style="display: flex;align-self: flex-end;gap:1rem;margin-top: 1rem;">
+
+              <div class="hasProjectOptions">
+                <img src="./assets/add.png" alt="Add Project" loading="lazy" height="18px">
+                <img src="./assets/addF.png" alt="Project Added" loading="lazy" height="18px">
+              </div>
+
+              <div class="hasProjectOptions">
+                <img src="./assets/view.png" alt="View Project" loading="lazy" height="18px">
+                <img src="./assets/viewF.png" alt="Project Viewed" loading="lazy" height="18px">
+              </div>
+
+              <div class="hasProjectOptions">
+                <img src="./assets/merge.png" alt="Merge Project" loading="lazy" height="18px">
+                <img src="./assets/mergeF.png" alt="Project Merged" loading="lazy" height="18px">
+              </div>
+
+            </div>
+          </div>
+          <div id="project1" class="projectCard">
+            <span>Super Cool Project</span>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+              rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+              explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+            <div style="display: flex;align-self: flex-end;gap:1rem;margin-top: 1rem;">
+
+              <div class="hasProjectOptions">
+                <img src="./assets/add.png" alt="Add Project" loading="lazy" height="18px">
+                <img src="./assets/addF.png" alt="Project Added" loading="lazy" height="18px">
+              </div>
+
+              <div class="hasProjectOptions">
+                <img src="./assets/view.png" alt="View Project" loading="lazy" height="18px">
+                <img src="./assets/viewF.png" alt="Project Viewed" loading="lazy" height="18px">
+              </div>
+
+              <div class="hasProjectOptions">
+                <img src="./assets/merge.png" alt="Merge Project" loading="lazy" height="18px">
+                <img src="./assets/mergeF.png" alt="Project Merged" loading="lazy" height="18px">
+              </div>
+
+            </div>
+          </div>
+          <div id="project1" class="projectCard">
+            <span>Super Cool Project</span>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+              rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+              explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+            <div style="display: flex;align-self: flex-end;gap:1rem;margin-top: 1rem;">
+
+              <div class="hasProjectOptions">
+                <img src="./assets/add.png" alt="Add Project" loading="lazy" height="18px">
+                <img src="./assets/addF.png" alt="Project Added" loading="lazy" height="18px">
+              </div>
+
+              <div class="hasProjectOptions">
+                <img src="./assets/view.png" alt="View Project" loading="lazy" height="18px">
+                <img src="./assets/viewF.png" alt="Project Viewed" loading="lazy" height="18px">
+              </div>
+
+              <div class="hasProjectOptions">
+                <img src="./assets/merge.png" alt="Merge Project" loading="lazy" height="18px">
+                <img src="./assets/mergeF.png" alt="Project Merged" loading="lazy" height="18px">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="newsFlash">
+        <div class="announcements">
+          <span class="announcementSpan">Announcements</span>
+          <div class="announcementContent">
+            <p>
+              <span>Site Maintenance</span>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+              atque corrupti quos dolores et quas.
+            </p>
+            <p>
+              <span>Updated Privacy Policy</span>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+              atque corrupti quos dolores et quas.
+            </p>
+            <!-- <p>
+              <span>Updated Privacy Policy</span>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+              atque corrupti quos dolores et quas.
+            </p> -->
+
+          </div>
+        </div>
+        <div class="trending">
+          <span class="announcementSpan">Trending</span>
+          <div class="announcementContent">
+            <div class="hasUserProfile">
+              <img src="https://avatarfiles.alphacoders.com/337/337251.jpg" alt="Profile Photo 2" width="40px"
+                style="border-radius: 50%;" />
+              <div class="hasUserName">
+                <span class="userName">@arjun</span>
+                <span class="userName2">World Peace Builder</span>
+              </div>
+            </div>
+            <div class="hasUserProfile">
+              <img src="https://nftevening.com/wp-content/uploads/2022/04/BAYC-PFP-NFT.png" alt="Profile Photo 2"
+                width="40px" style="border-radius: 50%;" />
+              <div class="hasUserName">
+                <span class="userName">@harsh</span>
+                <span class="userName2">Super Cool Project</span>
+              </div>
+            </div>
+            <div class="hasUserProfile">
+              <img src="https://www.artnews.com/wp-content/uploads/2021/08/some-fuckin-bullshit.png?w=400"
+                alt="Profile Photo 2" width="40px" style="border-radius: 50%;" />
+              <div class="hasUserName">
+                <span class="userName">@kartikey</span>
+                <span class="userName2">No Traffic Maker</span>
+              </div>
+            </div>
+            <div class="hasUserProfile">
+              <img
+                src="https://i.seadn.io/gae/jCQAQBNKmnS_AZ_2jTqBgBLIVYaRFxLX6COWo-HCHrYJ1cg04oBgDfHvOmpqsWbmUaSfBDHIdrwKtGnte3Ph_VwQPJYJ6VFtAf5B?auto=format&dpr=1&w=1000"
+                alt="Profile Photo 2" hight="40px" width="40px"
+                style="border-radius: 50%;object-fit: cover;min-width: 40px;min-height: 40px;" />
+              <div class="hasUserName">
+                <span class="userName">@khushal</span>
+                <span class="userName2">Fun Police</span>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
