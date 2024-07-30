@@ -492,7 +492,8 @@ body {
       .projects {
         flex: 1;
         opacity: 1;
-        place-content: end;
+        display: grid;
+
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
         border-radius: 0.5em;
