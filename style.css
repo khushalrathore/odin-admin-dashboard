@@ -492,7 +492,7 @@ body {
       .projects {
         flex: 1;
         opacity: 1;
-        display: grid;
+        display: grid !important;
 
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
